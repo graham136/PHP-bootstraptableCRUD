@@ -44,9 +44,9 @@ $result = $conn->query($sql);
 							// add actions for each row to edit
                           while($row = mysqli_fetch_array($result))  
                           {  
-                               $htmltable ='<td><a class="btn btn-info btn-block " href="phpfiletoReadrowdata.php?id='.$row['id'].'">Read Test</a> ';
-								$htmltable .='<a class="btn btn-success btn-block " href="phpfiletoUpdaterow.php?id='.$row['id'].'">Update Test</a>';
-								$htmltable .='<a class="btn btn-danger btn-block " href="phpfiletoDeleterow.php?id='.$row['id'].'">Delete Test</a></td>';
+                               	$htmltable ='<td><a class="btn btn-info btn-block " href="phpfiletoReadrowdata.php?id='.$row['id'].'">Read Test</a> ';
+				$htmltable .='<a class="btn btn-success btn-block " href="phpfiletoUpdaterow.php?id='.$row['id'].'">Update Test</a>';
+				$htmltable .='<a class="btn btn-danger btn-block " href="phpfiletoDeleterow.php?id='.$row['id'].'">Delete Test</a></td>';
 	
 				echo '  
                                	    <tr>  
