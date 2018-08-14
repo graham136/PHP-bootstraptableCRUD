@@ -35,10 +35,10 @@ $result = $conn->query($sql);
                      <table id="your_data" class="table table-striped table-bordered" style="width:100%">  
                           <thead>  
                                <tr>  
-                                    <td bgcolor='DodgerBlue'>Name</td>  
-                                    <td bgcolor='DodgerBlue'>Surname</td> 
-									<td bgcolor='DodgerBlue'>Actions</td>
-								</tr>  
+                                    	<td bgcolor='DodgerBlue'>Name</td>  
+                                    	<td bgcolor='DodgerBlue'>Surname</td> 
+					<td bgcolor='DodgerBlue'>Actions</td>
+				</tr>  
                           </thead>  
                           <?php  
 							// add actions for each row to edit
@@ -48,8 +48,8 @@ $result = $conn->query($sql);
 								$htmltable .='<a class="btn btn-success btn-block " href="phpfiletoUpdaterow.php?id='.$row['id'].'">Update Test</a>';
 								$htmltable .='<a class="btn btn-danger btn-block " href="phpfiletoDeleterow.php?id='.$row['id'].'">Delete Test</a></td>';
 	
-							   echo '  
-                               <tr>  
+				echo '  
+                               	    <tr>  
                                     <td>'.$row["name"].'</td>  
                                     <td>'.$row["surname"].'</td>  
                                     '.$htmltable.'
